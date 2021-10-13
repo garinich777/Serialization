@@ -10,6 +10,7 @@ namespace Serialization
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
