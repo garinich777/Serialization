@@ -95,5 +95,15 @@ namespace Serialization
                 current = current.Next;
             }
         }
+
+        public IEnumerable BackEnumerator()
+        {
+            ListNode current = Head;
+            while (current != null)
+            {
+                yield return current.Data;
+                current = current.Previous;
+            }
+        }
     }
 }
